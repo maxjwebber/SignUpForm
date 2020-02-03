@@ -23,7 +23,7 @@ public class FormActivity extends AppCompatActivity {
         EditText email = findViewById(R.id.emailInput);
         String result;
         String myConfirm = password2.getText().toString();
-        if (name.getText().toString().equals("")||email.getText().toString().equals("")||password1.toString().equals("")||password2.toString().equals(""))
+        if (name.getText().toString().equals("")||email.getText().toString().equals("")||password1.getText().toString().equals("")||password2.getText().toString().equals(""))
             result = "Please enter all required information.";
         else if (password1.getText().toString().equals(password2.getText().toString()))
             result = "Welcome, "+name.getText()+", you are now registered.";
