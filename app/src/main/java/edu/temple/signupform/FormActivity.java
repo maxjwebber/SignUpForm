@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class FormActivity extends AppCompatActivity {
@@ -16,7 +17,19 @@ public class FormActivity extends AppCompatActivity {
 
     public void confirmMessage(View v)
     {
-        Toast confirmMessage = Toast.makeText(getApplicationContext(),"CONFIRMED FOR BRAWL",Toast.LENGTH_SHORT);
+        EditText name = findViewById(R.id.nameInput);
+        EditText password1 = findViewById(R.id.passwordInput);
+        EditText password2 = findViewById(R.id.confirmInput);
+        EditText email = findViewById(R.id.emailInput);
+        String result;
+        String myConfirm = password2.getText().toString();
+        if (name.getText().toString().equals("")||email.getText().toString().equals("")||password1.toString().equals("")||password2.toString().equals(""))
+            result = "Please enter all required information.";
+        else if (password1.getText().toString().equals(password2.getText().toString()))
+            result = "Welcome, "+name.getText()+", you are now registered.";
+        else
+            result = "Passwords do not match.";
+        Toast confirmMessage = Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT);
         confirmMessage.show();
     }
 }
