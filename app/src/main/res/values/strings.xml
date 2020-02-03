@@ -6,5 +6,7 @@
     <string name="email_hint">Enter e-mail here</string>
     <string name="password_label">Password:</string>
     <string name="password_hint">Enter password here</string>
+    <string name="confirm_label">Confirm Password:</string>
+    <string name="confirm_hint">Re-enter password here</string>
     <string name="button_label">Submit</string>
 </resources>
