@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SignUpForm</string>
+    <string name="name_label">Name:</string>
+    <string name="name_hint">Enter name here</string>
+    <string name="email_label">E-mail:</string>
+    <string name="email_hint">Enter e-mail here</string>
+    <string name="password_label">Password:</string>
+    <string name="password_hint">Enter password here</string>
+    <string name="button_label">Submit</string>
 </resources>
